@@ -43,12 +43,8 @@ function botVoice(message) {
       speech.text = "Of course. Where are you currently?";
     }
 
-    if (message.includes('Kashmir')) {
+    if (message.includes('London')) {
       speech.text = "It is 18 degrees and sunny.";
-    }
-    if (message.inlucdes('Aryan'))
-    {
-      speech.text = "He is your classmate and geeky guy";
     }
 
     speech.volume = 1;
