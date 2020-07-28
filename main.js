@@ -30,12 +30,6 @@ function addBotText(text) {
 function botVoice(message) {
     const speech = new SpeechSynthesisUtterance();
     speech.text = "Sorry, I did not understand that.";
-    if message.includes("Hey")){
-      speech.text ="Hello , How may I help you.";
-    }
-    if message.includes("Who are you")){
-      speech.text="I'm Java ,G.S's Assistant,";
-    }
 
     if (message.includes('how are you')) {
       speech.text = "I am fine, thanks. How are you?";
@@ -51,9 +45,6 @@ function botVoice(message) {
 
     if (message.includes('Kashmir')) {
       speech.text = "It is 18 degrees and sunny.";
-    }
-    if (message.includes("Kanpur")){
-      speech.text ="Very hot and humid";
     }
 
     speech.volume = 1;
